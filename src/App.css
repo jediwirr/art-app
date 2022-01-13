@@ -1,11 +1,13 @@
 body {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 img {
   width: 100%;
-  margin: 3em;
+  /* margin: 3em; */
+  object-fit: contain;
+  max-width: 80%;
 }
 
 .gallery__header {
@@ -21,7 +23,7 @@ img {
 .slider {
   display: flex;
   flex-direction: 'row';
-  justify-content: 'space-between';
+  justify-content: space-between;
   width: 100vw;
   height: 100vh;
 }
@@ -34,11 +36,17 @@ img {
   color:lightsteelblue;
   transition: 1s ease;
   opacity: .5;
-  margin: 3em;
+  /* margin: 3em; */
 }
 
 .slider__chevron:hover {
   /* font-size: 6em; */
   color:lightslategrey;
   opacity: 1;
+}
+
+.slider__img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

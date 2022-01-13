@@ -11,7 +11,6 @@ const Gallery = (props) => {
         } else {
             setIndex(index + 1);
         }
-        console.log(index);
     }
 
     const prevSlide = () => {
@@ -20,7 +19,6 @@ const Gallery = (props) => {
         } else {
             setIndex(index - 1);
         }
-        console.log(index);
     }
 
     return (
@@ -29,12 +27,14 @@ const Gallery = (props) => {
                 <p>{title}</p>
             </div>
             <div className='slider'>
-                <div className='slider__chevron' onClick={nextSlide}><MdOutlineNavigateBefore /></div>
-                {
-                    !images ? <p>no images loaded</p> :
-                    <img src={images[index].url} alt={images[index].title} />
-                }
-                <div className='slider__chevron' onClick={prevSlide}><MdOutlineNavigateNext /></div>
+                <div className='slider__chevron' onClick={prevSlide}><MdOutlineNavigateBefore /></div>
+                    {
+                        !images ? <p>no images loaded</p> :
+                        <>
+                            <img src={images[index].url} alt={images[index].alt} />
+                        </>
+                    }
+                <div className='slider__chevron' onClick={nextSlide}><MdOutlineNavigateNext /></div>
             </div>
         </div>
     );
