@@ -54,4 +54,14 @@ export const images = [
         alt: 'breakfast',
         url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pieter_Claesz_-_Breakfast_-_Google_Art_Project.jpg/2560px-Pieter_Claesz_-_Breakfast_-_Google_Art_Project.jpg'
     },
+    {
+        title: 'Михаил Врубель. Пан. 1899',
+        alt: 'Михаил Врубель. Пан. 1899',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Vrubel_pan.jpg/1280px-Vrubel_pan.jpg'
+    },
+    {
+        title: 'Андреа Мантенья. Плафон в замке Сан-Джорджо. 1474',
+        alt: 'Андреа Мантенья. Плафон в замке Сан-Джорджо. 1474',
+        url: 'https://arthive.net/res/media/img/oy800/work/290/265607@2x.webp'
+    },
 ];
