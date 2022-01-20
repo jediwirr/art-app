@@ -29,15 +29,17 @@ const Gallery = (props) => {
             </div>
             <div className='slider'>
                 <div className='slider__chevron' onClick={prevSlide}><MdOutlineNavigateBefore /></div>
-                    {
-                        !images ? <p>no images loaded</p> :
-                        <>
-                            <img src={images[index].url} alt={images[index].alt} />
-                        </>
-                    }
+                    <div className='slider__pic'>
+                        {
+                            !images ? <p>no images loaded</p> :
+                            <>
+                                <img src={images[index].url} alt={images[index].alt} />
+                            </>
+                        }
+                    </div>
                 <div className='slider__chevron' onClick={nextSlide}><MdOutlineNavigateNext /></div>
             </div>
-            <div class='gallery__tip'>{images[index].title}</div>
+            <div className='gallery__tip'>{images[index].title}</div>
         </div>
     );
 };

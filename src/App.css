@@ -378,10 +378,9 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   /* margin: 3em; */
   object-fit: contain;
-  max-width: 80%;
 }
 
 .gallery {
@@ -434,13 +433,14 @@ img {
 
 .slider__chevron {
   display: flex;
+  width: 80px;
   align-items: center;
   cursor: pointer;
   font-size: 4em;
   color:lightsteelblue;
   transition: 1s ease;
   opacity: .5;
-  /* margin: 3em; */
+  padding: 5px;
 }
 
 .slider__chevron:hover {
@@ -450,8 +450,6 @@ img {
   font-size: 5em;
 }
 
-.slider__img {
+.slider__pic {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
