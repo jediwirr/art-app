@@ -4,6 +4,7 @@ import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 const Gallery = (props) => {
     const {title, images} = props;
     const [index, setIndex] = useState(0);
+    // const [tipActive, setTipActive] = useState(false);
 
     const nextSlide = () => {
         if (index === images.length - 1) {
@@ -36,6 +37,7 @@ const Gallery = (props) => {
                     }
                 <div className='slider__chevron' onClick={nextSlide}><MdOutlineNavigateNext /></div>
             </div>
+            <div class='gallery__tip'>{images[index].title}</div>
         </div>
     );
 };

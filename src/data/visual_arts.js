@@ -1,6 +1,6 @@
 export const images = [
     {
-        title: '',
+        title: 'Фирсов И. И. Юный живописец. 1765-1768',
         alt: 'firsov',
         url: 'https://opisanie-kartin.com/uploads2/image097.jpg'
     },
