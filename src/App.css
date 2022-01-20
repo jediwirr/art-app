@@ -125,6 +125,10 @@ html {
     -ms-text-size-adjust: 100%; /* 2 */
 }
 
+a {
+  text-decoration: none;
+}
+
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
@@ -386,41 +390,41 @@ img {
 .gallery {
   width: 100vw;
   background-color: #000;
-  position: relative;
 }
-
-.gallery__tip {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 0% 100% 0% 0%;;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.35);
-  font-size: 0px;
-  transition: .2s ease-in;
-  padding: 12px;
-}
-.gallery__tip:hover {
-  width: 100%;
-  border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.85);
-  color: rgb(0, 0, 0);
-  font-size: 1em;
-}
-/* .gallery__tip_active {
-  width: 100%;
-  border-radius: 0;
-} */
 
 .gallery__header {
-  font-size: 5em;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color:papayawhip;
+  padding: 0 12px;
+}
+
+.gallery__title {
   color:seagreen;
+  font-size: 5em;
+  margin-bottom: 25px;
+}
+
+.gallery__menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+}
+
+.gallery__menu-list-item {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__menu-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.gallery__menu-list-item a {
+  color: #000;
 }
 
 .slider {
@@ -429,6 +433,7 @@ img {
   justify-content: space-between;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .slider__chevron {
@@ -452,4 +457,61 @@ img {
 
 .slider__pic {
   display: flex;
+}
+
+.slider__tip {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 0% 100% 0% 0%;;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.35);
+  font-size: 0px;
+  transition: .2s ease-in;
+  padding: 12px;
+}
+
+.slider__tip-preview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.slider__tip:hover {
+  width: 100%;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+}
+
+.slider__tip_active {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+}
+
+.slider__tip-chevron {
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.slider__tip-chevron:hover {
+  opacity: .25;
+}
+
+.slider__tip-content {
+  display: none;
+}
+
+.slider__tip-content_active {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.2;
 }
