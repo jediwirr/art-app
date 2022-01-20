@@ -10,14 +10,19 @@ export const images = [
         url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/National_Park_Service_sample_pictographs.svg/1920px-National_Park_Service_sample_pictographs.svg.png'
     },
     {
+        title: 'John\'s Diner with John\'s Chevelle, 2007',
+        alt: 'photorealism',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/f/f8/John%27s_Diner_by_John_Baeder.jpg'
+    },
+    {
         title: 'А. Рече-Мора. «Севильская улица от столовой „Хонтанарес“ к улице Алькала». 1993',
         alt: 'hyprrealism',
         url: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Cafeter%C3%ADa_Hontanares.JPG'
     },
     {
-        title: 'John\'s Diner with John\'s Chevelle, 2007',
-        alt: 'photorealism',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/f/f8/John%27s_Diner_by_John_Baeder.jpg'
+        title: 'Chuck Close, 1969',
+        alt: 'Chuck Close, 1969',
+        url: 'http://chuckclose.com/images/work018_zoom.jpg'
     },
     {
         title: 'Руанский собор, портал (солнце)',

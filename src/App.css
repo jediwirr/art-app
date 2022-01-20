@@ -12,6 +12,7 @@ img {
 
 .gallery {
   width: 100vw;
+  background-color: #000;
 }
 
 .gallery__header {
@@ -36,7 +37,7 @@ img {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 3em;
+  font-size: 4em;
   color:lightsteelblue;
   transition: 1s ease;
   opacity: .5;
@@ -45,8 +46,9 @@ img {
 
 .slider__chevron:hover {
   /* font-size: 6em; */
-  color:lightslategrey;
+  color:#fff;
   opacity: 1;
+  font-size: 5em;
 }
 
 .slider__img {
