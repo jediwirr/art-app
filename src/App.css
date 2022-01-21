@@ -383,13 +383,15 @@ body {
 
 img {
   max-width: 100%;
-  /* margin: 3em; */
+  max-height: 100%;
   object-fit: contain;
 }
 
+
+/* Gallery styles start */
+
 .gallery {
   width: 100vw;
-  background-color: #000;
 }
 
 .gallery__header {
@@ -417,6 +419,7 @@ img {
   margin-right: 25px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .gallery__menu-list-item:last-child {
@@ -427,13 +430,21 @@ img {
   color: #000;
 }
 
+/* Gallery styles end */
+
+
+/* Slider styles start */
+
 .slider {
-  display: flex;
-  flex-direction: 'row';
-  justify-content: space-between;
-  width: 100%;
-  height: 100vh;
   position: relative;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider__show {
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider__chevron {
@@ -457,6 +468,7 @@ img {
 
 .slider__pic {
   display: flex;
+  align-items: center;
 }
 
 .slider__tip {
@@ -472,7 +484,7 @@ img {
   padding: 12px;
 }
 
-.slider__tip-preview {
+.slider__tip-panel {
   display: flex;
   justify-content: space-between;
   margin-bottom: 75px;
@@ -515,3 +527,96 @@ img {
   font-size: 24px;
   line-height: 1.2;
 }
+
+.slider__preview {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.slider__preview-container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.slider__preview-wrapper {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  transition: .5s ease;
+}
+
+.slider__preview-item {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 1;
+  transition: .2s ease;
+}
+
+.slider__preview-pic {
+  object-fit: cover;
+}
+
+.slider__preview-overlay {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.65);
+  transition: .2s ease;
+}
+
+.slider__preview-chevron {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0 20px;
+}
+
+.slider__preview-chevron:hover {
+  font-size: 30px;
+}
+
+.slider__close-ico {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.slider__close-ico:hover {
+  opacity: 1;
+}
+
+.slider__close-ico-elem {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.slider__close-ico-elem:first-child {
+  transform: rotate(45deg);
+}
+
+.slider__close-ico-elem:last-child {
+  transform: rotate(-45deg);
+}
+
+/* Slider styles end */
