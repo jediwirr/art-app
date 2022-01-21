@@ -493,7 +493,7 @@ img {
 .slider__tip:hover {
   width: 100%;
   border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.90);
   color: rgb(0, 0, 0);
   font-size: 1em;
 }
@@ -559,7 +559,6 @@ img {
   overflow: hidden;
   padding: 5px;
   cursor: pointer;
-  z-index: 1;
   transition: .2s ease;
 }
 
@@ -582,10 +581,11 @@ img {
   cursor: pointer;
   font-size: 24px;
   padding: 0 20px;
+  opacity: .75;
 }
 
 .slider__preview-chevron:hover {
-  font-size: 30px;
+  opacity: 1;
 }
 
 .slider__close-ico {
