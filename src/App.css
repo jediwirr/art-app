@@ -390,10 +390,6 @@ img {
 
 /* Gallery styles start */
 
-.gallery {
-  width: 100vw;
-}
-
 .gallery__header {
   height: 100vh;
   display: flex;
